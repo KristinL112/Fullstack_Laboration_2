@@ -1,0 +1,54 @@
+.custom-navbar {
+  background-color: #f2dcc9;
+}
+
+.navbar-brand {
+  margin-right: 40%; /* Flyttar ikonen åt vänster */
+}
+
+a {
+  font-size: 28px;
+  color: #2a2a2a;
+  text-decoration: inherit;
+}
+
+.search-icon {
+  margin-right: auto;
+  margin-left: 20px; /* Flyttar ikonen åt vänster */
+}
+
+a:hover {
+  color: #4e4e4f;
+}
+
+#Nav\.Link {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin: 10px;
+  border: transparent;
+  background-color: transparent;
+}
+
+#Nav\.Link li a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+  margin: 10px;
+}
+
+#dropdown-basic-button {
+  background-color: transparent;
+  color: #000000;
+  border: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+  /* #responsive-navbar-nav {
+    height: 30vh;
+  } */
+  .Logo {
+    width: 80px;
+    height: auto;
+  }
+}

@@ -1,0 +1,27 @@
+.custom-footer {
+  background-color: #d9b88f;
+  color: rgb(0, 0, 0);
+  padding-bottom: 4vh;
+}
+
+.py-3 {
+  position: flex;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px 0;
+}
+
+.Logo-footer {
+  margin-left: 1vh;
+}
+
+/* @media only screen and (max-width: 768px) {
+  .Logo {
+    width: 100px;
+    height: auto;
+    justify-content: center;
+  }
+} */

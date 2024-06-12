@@ -1,0 +1,6 @@
+.carousel-item img {
+  max-width: 25%;
+  height: auto;
+  padding: 20px;
+  background-color: #f2dcc9;
+}
