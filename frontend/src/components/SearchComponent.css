@@ -2,8 +2,8 @@
   width: 80vw;
   height: 5.7vh;
   max-width: 600px;
-  max-width: 400px; /* Uppdaterad bredd på sökfältet */
-  border-radius: 20px; /* Rundade hörn */
+  max-width: 400px;
+  border-radius: 20px;
   margin-top: 1rem;
   margin-left: 35%;
   margin-bottom: 1rem;
@@ -14,7 +14,6 @@
 
 .search-results {
   display: grid;
-
   justify-content: center;
 }
 
