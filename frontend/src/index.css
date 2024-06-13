@@ -25,10 +25,6 @@ body {
   margin-top: 15px;
 }
 
-.custom-navbar .navbar-collapse {
-  border: #ffffff;
-}
-
 .btn:hover {
   background-color: #786650;
   border-color: #786650;

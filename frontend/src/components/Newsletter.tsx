@@ -54,6 +54,7 @@ function Newsletter() {
               }}
             >
               <Form>
+                <label htmlFor="email">Namn</label>
                 <Field
                   id="name"
                   name="news_id"
