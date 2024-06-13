@@ -1,14 +1,7 @@
 .custom-navbar {
-  background-color: #f2dcc9;
   display: flex;
-  /* justify-content: space-between;
-  align-items: center; */
 }
 
-/* .navbar-brand {
-  display: flex;
-  justify-content: center;
-} */
 .Logo {
   margin-right: 70vh;
 }
