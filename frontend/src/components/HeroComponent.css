@@ -1,15 +1,15 @@
 .hero-text {
   position: absolute;
   top: 30%;
-  left: 50%;
   transform: translate(-50%, -50%);
   text-align: left;
   color: white;
   justify-content: center;
+  margin-left: 55%;
 }
 
 .hero-text h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   color: white;
 }
 
@@ -53,9 +53,4 @@
     margin-top: 16px;
     font-size: 14px;
   }
-  /* .btn-primary {
-    margin-top: 16px;
-    font-size: 8px;
-    width: fit-content;
-  } */
 }
