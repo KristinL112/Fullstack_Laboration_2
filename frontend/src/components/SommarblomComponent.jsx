@@ -1,10 +1,12 @@
 import axios from 'axios'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
+import { CartContext } from '../features/ContextProvider'
 import './Products.css'
 
 function Allproducts() {
   const [products, setProducts] = useState([])
+  const { dispatch } = useContext(CartContext)
   const category_id = 5 // Ett default category_id
 
   const fetchData = async () => {
@@ -13,6 +15,19 @@ function Allproducts() {
       setProducts(response.data)
     } catch (error) {
       console.error('Error fetching data:', error)
+    }
+  }
+
+  const addToCart = async product => {
+    try {
+      await axios.post('/cart', {
+        productid: product.id,
+        price: product.price,
+        quantity: 1 // Antal produkter som läggs till i kundvagnen - gör det dynamiskt?
+      })
+      dispatch({ type: 'Add', product: product })
+    } catch (error) {
+      console.error('Error adding product to cart:', error)
     }
   }
 
@@ -34,6 +49,12 @@ function Allproducts() {
               <Card.Body className="card-body">
                 <Card.Title>{product.titel}</Card.Title>
                 <Card.Text>{product.price} kr</Card.Text>
+                <button
+                  className="btn btn-primary"
+                  onClick={() => addToCart(product)}
+                >
+                  Lägg till i kundvagn
+                </button>
               </Card.Body>
             </Card>
           </Col>
