@@ -8,8 +8,9 @@ import {
   Offcanvas
 } from 'react-bootstrap'
 import Image from 'react-bootstrap/Image'
-import { BiSearch, BiShoppingBag } from 'react-icons/bi'
+import { BiSearch } from 'react-icons/bi'
 import { FaRegUserCircle } from 'react-icons/fa'
+import { GrCart } from 'react-icons/gr'
 import { Link, NavLink, Route, Routes } from 'react-router-dom'
 import '../components/NavBar.css'
 import { CartContext } from '../features/ContextProvider'
@@ -46,8 +47,8 @@ function NavBarFunction() {
               alt="logo"
               fluid
               rounded
-              width={140}
-              height={140}
+              width={130}
+              height={130}
               className="Logo"
             />
           </Link>
@@ -59,7 +60,7 @@ function NavBarFunction() {
             </NavLink>
             <NavLink to="/cart">
               <div className="mx-4"></div> {/* Mellanrum */}
-              <BiShoppingBag /> {cart.length}
+              <GrCart /> {cart.length}
             </NavLink>
           </div>
 
@@ -108,18 +109,6 @@ function NavBarFunction() {
                   Kontakt
                 </Link>
               </Nav>
-
-              {/* <SearchComponent /> */}
-              {/* <Form className="d-flex">
-                  <Form.Control
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-
-                  <Button variant="outline-success">Search</Button>
-                </Form> */}
             </Offcanvas.Body>
           </Navbar.Offcanvas>
 
