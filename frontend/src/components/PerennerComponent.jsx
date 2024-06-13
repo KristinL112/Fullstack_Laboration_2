@@ -23,7 +23,7 @@ function Allproducts() {
       await axios.post('/cart', {
         productid: product.id,
         price: product.price,
-        quantity: 1 // Antal produkter som läggs till i kundvagnen (kan vara dynamiskt)
+        quantity: 1 // Antal produkter som läggs till i kundvagnen - gör det dynamiskt?
       })
       dispatch({ type: 'Add', product: product })
     } catch (error) {
@@ -55,12 +55,6 @@ function Allproducts() {
                 >
                   Lägg till i kundvagn
                 </button>
-                {/* <button
-                  className="btn btn-primary"
-                  onClick={() => dispatch({ type: 'Add', product: product })}
-                >
-                  Lägg till i kundvagn
-                </button> */}
               </Card.Body>
             </Card>
           </Col>

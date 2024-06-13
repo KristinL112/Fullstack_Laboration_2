@@ -14,23 +14,24 @@ const Footer = () => {
             {/* Centrerar Newsletter på mindre skärmar */}
             <Newsletter />
           </Col>
-          <Col xs={12} md={4}>
-            <Nav id="Nav.Link">
+          <Col xs={12} md={4} className="d-flex justify-content-center">
+            <Nav id="Nav.Link" className="nav-links">
               <Link id="Nav.Link"> Om oss</Link>
               <Link id="Nav.Link"> Köpvillkor</Link>
+              <Link id="Nav.Link"> Vanliga Frågor</Link>
               <Link id="Nav.Link"> Kontakta oss</Link>
             </Nav>
           </Col>
 
-          <Col xs={12} md={4}>
+          <Col xs={12} md={4} className="d-flex justify-content-center">
             <Stack className="Logo-footer">
               <Image
                 src="/images/Logo_GARDEN_LIFE.png"
                 alt="logo"
                 // fluid
                 rounded
-                width={160}
-                height={160}
+                width={180}
+                height={180}
                 className="Logo"
               />
             </Stack>
