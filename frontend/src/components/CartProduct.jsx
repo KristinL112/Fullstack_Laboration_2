@@ -7,6 +7,8 @@ import './Products.css'
 const CartProduct = ({ product }) => {
   const { cart, dispatch } = useContext(CartContext)
 
+  //Fungerar ej, kolla upp detta
+
   const Increase = id => {
     const Index = cart.findIndex(p => p.id === id)
     if (cart[Index].quantity < 10) {

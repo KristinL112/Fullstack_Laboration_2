@@ -52,7 +52,7 @@ const SearchComponent = () => {
           <Form.Group controlId="search">
             <Form.Control
               type="text"
-              placeholder="Sök efter produkt"
+              placeholder="Sök efter produkt, t.ex Lavendel"
               onChange={e => handleSearch(e.target.value)}
             />
           </Form.Group>

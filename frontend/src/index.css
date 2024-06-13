@@ -17,16 +17,16 @@ body {
   min-height: 100vh; */
 }
 
-.custom-navbar {
-  background-color: #d9b88f;
-}
-
 .btn-primary {
   background-color: #a98f6f;
   border-color: #a98f6f;
   border-radius: 0%;
   color: white;
   margin-top: 15px;
+}
+
+.custom-navbar .navbar-collapse {
+  border: #ffffff;
 }
 
 .btn:hover {
