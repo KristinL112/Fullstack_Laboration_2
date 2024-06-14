@@ -33,35 +33,39 @@ function NavBarFunction() {
     <div className="custom-navbar">
       {['m'].map(expand => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
-          <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+          <div className="toggle-container">
+            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 
-          <div className="search-icon">
-            <NavLink to="/searchresult">
-              <BiSearch />
-            </NavLink>
+            <div className="search-icon">
+              <NavLink to="/searchresult">
+                <BiSearch />
+              </NavLink>
+            </div>
           </div>
-
-          <Link to={'/'} className="navbar-brand">
-            <Image
-              src="/images/Logo_GARDEN_LIFE_2.png"
-              alt="logo"
-              fluid
-              rounded
-              width={130}
-              height={130}
-              className="Logo"
-            />
-          </Link>
-
-          <div className="d-flex justify-content-between">
-            <NavLink to="/userlogin">
-              <div className="mx-4"></div> {/* Mellanrum */}
-              <FaRegUserCircle />
-            </NavLink>
-            <NavLink to="/cart">
-              <div className="mx-4"></div> {/* Mellanrum */}
-              <GrCart /> {cart.length}
-            </NavLink>
+          <div className="nav-logo">
+            <Link to={'/'} className="navbar-brand">
+              <Image
+                src="/images/Logo_GARDEN_LIFE_2.png"
+                alt="logo"
+                fluid
+                rounded
+                width={130}
+                height={130}
+                className="Logo"
+              />
+            </Link>
+          </div>
+          <div className="nav-icons">
+            <div className="d-flex justify-content-between">
+              <NavLink to="/userlogin">
+                <div className="mx-4"></div> {/* Mellanrum */}
+                <FaRegUserCircle />
+              </NavLink>
+              <NavLink to="/cart">
+                <div className="mx-4"></div> {/* Mellanrum */}
+                <GrCart /> {cart.length}
+              </NavLink>
+            </div>
           </div>
 
           <Navbar.Offcanvas

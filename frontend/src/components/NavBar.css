@@ -1,9 +1,19 @@
 .custom-navbar {
   display: flex;
 }
+.toggle-container {
+  display: flex;
+  margin-left: 30px;
+}
 
-.Logo {
-  margin-right: 70vh;
+.nav-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-icons {
+  display: flex;
+  margin-right: 30px;
 }
 
 a {
@@ -19,10 +29,6 @@ a {
 
 a:hover {
   color: #4e4e4f;
-}
-
-.offcanvas {
-  border: none;
 }
 
 #Nav\.Link {
@@ -52,13 +58,7 @@ a:hover {
     height: 20vh;
   }
   .Logo {
-    margin-right: 32px;
     width: 80px;
     height: auto;
-  }
-
-  div.Nav-icons {
-    display: flex;
-    justify-content: end;
   }
 }
