@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 import CartProduct from '../components/CartProduct'
-import { totalItem, totalPrice } from '../features/CartUtils'
+import { totalItem, totalPrice } from '../features/CartReducer'
 import { CartContext } from '../features/ContextProvider'
 
 const Cart = () => {

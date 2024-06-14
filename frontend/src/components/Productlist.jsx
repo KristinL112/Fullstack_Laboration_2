@@ -48,7 +48,7 @@ function Allproducts() {
               />
               <Card.Body className="card-body">
                 <Card.Title>{product.titel}</Card.Title>
-                <Card.Text>{product.price} </Card.Text>
+                <Card.Text>{product.price} kr</Card.Text>
                 <button
                   className="btn btn-primary"
                   onClick={() => addToCart(product)}
