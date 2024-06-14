@@ -20,7 +20,7 @@ const CartReducer = (state, action) => {
 
     case 'Remove':
       // Hantera borttagning av produkt här
-      return state.filter(p => p.id !== action.Id)
+      return state.filter(p => p.id !== action.id)
 
     // Ökning av antal produkter här
     case 'Increase':
