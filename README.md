@@ -1,8 +1,8 @@
 # Fullstack_Laboration_2
 
 Starta applikation i terminalen:
-1.Kör kommandot <npm run build-frontend> i backend mappen.
-2.Kör kommandot <node index.js> - Allt startas från backend-mappen
+1.Kör kommandot npm run build-frontend i backend mappen.
+2.Kör kommandot node index.js - Allt startas från backend-mappen
 
 Laboration 2: Projekt
 
